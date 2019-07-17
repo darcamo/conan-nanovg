@@ -6,7 +6,7 @@ import glob
 
 class NanovgConan(ConanFile):
     name = "nanovg"
-    version = "2018-09-27-f4069e6"
+    version = "2019-04-22-1f9c886"
     license = "https://raw.githubusercontent.com/memononen/nanovg/master/LICENSE.txt"
     author = "Darlan Cavalcante Moreira (darcamo@gmail.com)"
     url = "https://github.com/darcamo/conan-nanovg"
@@ -17,7 +17,7 @@ class NanovgConan(ConanFile):
     default_options = "shared=False"
     generators = "cmake"
     exports_sources = "CMakeLists.txt"
-    requires = "glfw/3.2.1@bincrafters/stable"
+    requires = "glfw/[>=3.3]@bincrafters/stable"
     homepage = "https://github.com/memononen/nanovg.git"
 
     def source(self):
